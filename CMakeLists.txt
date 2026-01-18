@@ -2,8 +2,8 @@ cmake_minimum_required(VERSION 4.0)
 
 project(learnopengl)
 
-find_package(OpenGL REQUIRED)
+# glad, glfw
+add_subdirectory(external/)
 
-add_subdirectory(external/glfw)
-
+# main
 add_subdirectory(src/)
